@@ -10,11 +10,10 @@ $(document).ready(function() {
 });
 
 function init() {
-    var currentRepo, getHref;
-
+    
     $('#repo_listing .mini-repo-list-item').each(function(){
-      currentRepo = $(this);
-      getHref = currentRepo.attr("href");
+      var currentRepo = $(this);
+      var getHref = currentRepo.attr("href");
       
       $.ajax({
           url: "https://api.github.com/repos"+getHref,

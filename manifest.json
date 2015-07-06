@@ -1,0 +1,15 @@
+{
+  "name": "Show Stars Dashboard",
+  "short_name": "show-stars-dashboard",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "See your repositories stars on dashboard.",
+  "homepage_url": "http://github.com/amitmerchant1990/show-stars-dashboard",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/", "https://github.com/orgs/*/dashboard"],
+      "js": ["jquery.min.js", "dashboard.js"]
+    }
+  ]
+}

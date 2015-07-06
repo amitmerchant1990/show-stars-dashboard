@@ -7,13 +7,14 @@
 */
 $(document).ready(function() {
   init();
-})
+});
 
 function init() {
-  
+    var currentRepo, getHref;
+
     $('#repo_listing .mini-repo-list-item').each(function(){
-      var currentRepo = $(this);
-      var getHref =  currentRepo.attr("href");
+      currentRepo = $(this);
+      getHref = currentRepo.attr("href");
       
       $.ajax({
           url: "https://api.github.com/repos"+getHref,

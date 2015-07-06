@@ -1,6 +1,6 @@
 # Show Stars Dashboard
 
-This is a Chrome extension to see your repositories stars on dashboard.**
+**This is a Chrome extension to see your repositories stars on dashboard.**
 
 ![image](https://raw.githubusercontent.com/amitmerchant1990/show-stars-dashboard/master/images/demo.png)
 
